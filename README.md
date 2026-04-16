@@ -80,7 +80,7 @@ ensemble's confidence ranks correctly vs. incorrectly classified examples.
 ## Repository structure
 
 ```
-NLP_ensembles/
+ensemble-weighting-with-attention-topology/
 ├── BERT_training.ipynb          Fine-tune one strong DistilBERT on IMDB
 ├── BERT_training_weak.ipynb     Truncate to 1 layer, fine-tune (the weak models)
 ├── BERT_ensembles.ipynb         5-model strong ensemble with all 3 weighting methods

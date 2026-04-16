@@ -1,0 +1,22 @@
+# Core ML stack — used by every notebook
+torch>=2.0
+transformers[torch]>=4.30
+datasets>=2.13
+accelerate>=0.20.1
+
+# Numerical / scientific
+numpy>=1.24
+scikit-learn>=1.3
+pandas>=2.0
+matplotlib>=3.7
+tqdm>=4.65
+
+# Ensemble weight optimisation
+bayesian-optimization>=1.4      # Bayesian optimisation over accuracy
+cvxopt>=1.3                     # Quadratic programming backend
+qpsolvers==3.4.0                # High-level QP interface (pinned — API breaks later)
+
+# Topological correlation between attention matrices
+# These install from source — see notebooks for install commands.
+# ripser-plusplus @ git+https://github.com/simonzhang00/ripser-plusplus.git
+# rtd            @ git+https://github.com/IlyaTrofimov/RTD.git

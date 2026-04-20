@@ -59,6 +59,12 @@ Repository = "https://github.com/polinaproskura/ensemble-weighting-with-attentio
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "slow: requires network or GPU (deselect with '-m \"not slow\"')",
+]
+
 [tool.ruff]
 line-length = 100
 target-version = "py310"
